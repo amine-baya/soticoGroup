@@ -1,0 +1,36 @@
+{
+  "name": "soticogroup",
+  "version": "1.0.0",
+  "description": "soticogroup web with MERN",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend ",
+    "dev": "concurrently --kill-others \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "author": "Baya Web",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "google-map-react": "^2.1.10",
+    "mongoose": "^5.13.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.6.3",
+    "path": "^0.12.7",
+    "react-bootstrap": "^1.6.1",
+    "react-router-dom": "^5.2.0",
+    "slugify": "^1.5.3",
+    "styled-components": "^5.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.9"
+  }
+}

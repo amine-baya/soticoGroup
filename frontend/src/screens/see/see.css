@@ -1,0 +1,14 @@
+.see
+{
+    color: red;
+    padding-top: 100px;
+}
+.carousel.carousel-slider
+{
+    height: 80vh;
+}
+
+.carousel .thumb.selected, .carousel .thumb:hover
+{
+    border: 2px solid var(--bleu) !important;
+}

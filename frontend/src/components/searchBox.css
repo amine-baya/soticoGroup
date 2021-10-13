@@ -1,0 +1,41 @@
+.searchForm{
+    position: relative;
+}
+
+.searchInput{
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    
+}
+.searchInput::placeholder{
+ 
+    color: white;
+    opacity: .7;
+    
+}
+
+.searchBox_Button{
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.searchBox_Button i{
+   color: #fff;
+}
+.searchBox_Button:hover{
+    background: transparent;
+}
+.searchBox_Button:active{
+    background: transparent;
+}
+.searchBox_Button:focus{
+    background: transparent;
+}

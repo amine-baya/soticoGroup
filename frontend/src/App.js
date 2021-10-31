@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop' 
 import Navbar from "./components/Navbar/Navbar";
-import HomeScreen from './screens/HomeScreen';
+import HomeScreen from './screens/homeScreen/HomeScreen';
 import SeeScreen from './screens/see/See.js';
 import CategoryScreen from './screens/categoryScreen/CategoryScreen';
 import ProductScreen from './screens/productScreen/ProductScreen';

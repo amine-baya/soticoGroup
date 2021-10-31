@@ -8,7 +8,7 @@
     transition: all 0.5s ease-in-out ;
      position: fixed;
      width: 100%;
-    z-index: 1000;
+    z-index: 1000; 
 }
 
 nav ul {
@@ -18,7 +18,7 @@ nav ul {
 
 .navbarItems.sticky{
       position: fixed;
-    width: 100%;
+      width: 100%;
 }
 
 .navbar_logo a{
@@ -50,6 +50,7 @@ nav ul {
     padding: 0.5rem 1rem;
     font-weight: bold;
     text-transform: uppercase;
+    font-size: 16px;
 }
 .nav-links:hover{
     background-color: white;
@@ -63,13 +64,53 @@ nav ul {
 
 .nav-links-mobile{
     display: none;
-}
+} 
 .menu-icon{
     display: none;
 }
 
 
-@media screen and (max-width: 960px){
+/********************MEDIA*********************/
+@media (max-width: 575px) { 
+
+    .navbar_logo a {
+    color:white;
+    justify-self: start;
+    margin-left: -16px;
+    cursor: pointer;
+    text-decoration: none !important;
+    font-size: 18px;
+    } 
+
+}
+@media (min-width: 576px) and (max-width: 768px ) {
+.navbar_logo a {
+    color:white;
+    justify-self: start;
+    margin-left: -16px;
+    cursor: pointer;
+    text-decoration: none !important;
+    font-size: 22px;
+
+    
+    }
+
+}
+
+@media  (min-width: 1050px) and (max-width: 1220px ){
+
+.nav-links{
+    
+    padding: 0 5px !important;
+    font-weight: bold;
+    
+    font-size: 14px;
+}
+    
+}
+
+@media (max-width: 1049px) {
+   
     .NavbarItems{
         position: relative;
     }

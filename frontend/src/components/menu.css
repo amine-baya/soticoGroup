@@ -54,3 +54,19 @@
     width: 100%;
     text-transform: uppercase;
 }
+
+
+@media (max-width:575px ) {
+.menu_cart{
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+}
+.menu_cart h3{
+    font-size: 14px;
+
+    
+}
+
+}

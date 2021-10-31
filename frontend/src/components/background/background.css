@@ -12,10 +12,12 @@
     position: absolute;
     top: 30%;
     left: 20%;
+    z-index: 100;
 }
 
 .background .text h1
 {
+    font-size: 24px;
     width: 0ch;
     overflow: hidden;
     white-space: nowrap;
@@ -66,6 +68,7 @@
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.3);
     transform: translate(10%,-20%);
+    
 }
 
 .background .four_cercle
@@ -104,21 +107,85 @@
 }
 
 
+@media (max-width: 575px) { 
+
+    .background
+    {
+    height: 52vh;
+   
+    }
+
+    .background .text
+    {
+        top: 23%;
+        left: 20%;
+
+
+    }
+    .background .first_cercle,.background .second_cercle,.background .third_cercle
+    {
+        height: 0;
+        width: 0;
+    }
+
+    .background .four_cercle
+    {
+
+        width: 100%;
+        transform: translate(0%,0%);
+        border-radius: 0%;
+        background-size:100% 45%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px ) {
+
+.background .first_cercle,.background .second_cercle,.background .third_cercle
+{
+    height: 0;
+    width: 0;
+}
+
+.background .four_cercle
+{
+    
+    width: 100%;
+    transform: translate(0%,0%);
+    border-radius: 0%;
+    background-size:100% 60%;
+}
+}
+
 @media (min-width: 769px) and (max-width: 992px ) {
-.background .four_cercle
+
+.background .four_cercle,.background .third_cercle
 {
-    height: 500px;
-    width: 500px;
-    border-radius: 0%;
-    background-size: 100% 100%;
+    width: 600px;
 }
+
+.background .text
+{
+   
+    left: 5%;
 }
+.background .text h1
+{
+    font-size: 24px;
+}
+.background .first_cercle,.background .second_cercle
+{
+    height: 0;
+    width: 0;
+}
+
+}
+
+
+
 @media (min-width: 993px) and (max-width: 1200px ){
-.background .four_cercle
-{
-    height: 500px;
-    width: 500px;
-    border-radius: 0%;
-    background-size: 100% 100%;
+.background .four_cercle,.background .third_cercle
+{   
+    width: 600px;
 }
+
 }

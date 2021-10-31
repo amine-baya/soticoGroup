@@ -107,14 +107,13 @@ const CategoryScreen = ({match}) => {
 
     }
 
-
-
     let child
     useEffect(() => { 
     
     getData()
         
-    }, [match.params.id ])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [ match.params.id])
 
     const categoryName = datas.find(el => el._id === match.params.id )
         
@@ -124,7 +123,7 @@ const CategoryScreen = ({match}) => {
             <div className='categoryScreen container'>
             <div className='banner'>
                     {items}
-            <div className={`${categoryName !== undefined && !categoryName. description && 'd-none'} description`}> 
+            <div className={`${categoryName !== undefined && !categoryName.description && 'd-none'} description`}> 
                 <div className='container'>
                     <h2 className="description_h2">{categoryName !== undefined && categoryName.name}</h2>
                     <p>{categoryName !== undefined && categoryName.description}</p>

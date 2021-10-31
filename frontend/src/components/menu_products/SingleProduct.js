@@ -16,11 +16,11 @@ const handleClick = ()=> {
             <div  className= "thefront">
               <img src ={props.image}  alt='sorry'/> 
             
-            <span onClick={handleClick} className="details_back" ><i class="fas fa-info-circle "></i></span>
+              <span onClick={handleClick} className="details_back" ><i class="fas fa-info-circle "></i></span>
               <h4>{props.title}</h4>
               <p>{props.description}</p>
                 <Link to={`/singleProduct/${props.id}`}>  
-              <span className="see_more" >
+                <span className="see_more" >
                  Détails
                  </span>
                  </Link> 

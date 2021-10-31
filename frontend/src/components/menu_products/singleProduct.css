@@ -1,8 +1,7 @@
-.maincard{
+.maincard{ 
     position: relative;
     margin-top:40px ;
-    height: 350px;
-    
+    height: 350px; 
 }
   
 .thecard{
@@ -38,6 +37,17 @@
     letter-spacing: 1px;
     margin-top: 8px;   
 }
+.grid_1 .thefront p
+{
+    margin: 0 20px;
+    transform: translateX(10px);
+}
+.grid_1 .thefront h4
+{
+    text-align: left;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
 
  .thefront .details_back{
      display: block;
@@ -59,7 +69,7 @@
      position: absolute;
     top: 65%;
     left: 50%;
-    font-size: 0;
+    font-size: 20px;
     transition: all ease .2s;
 }
 .thefront:hover .see_more{
@@ -124,4 +134,48 @@ background-size: cover;
 {
     padding: 20px 70px;
 }
+
+
+@media (max-width:575px ) {
+
+    .maincard{ 
+    height: 250px; 
+    }
+
+ .grid_1 .thefront p
+{
+    font-size: 11px;
+    
+}
+.grid_1 .thefront .see_more
+{
+    visibility: visible;
+    position: absolute;
+    top: 90%;
+    left: 72%;
+    font-size: 0;
+    transition: all ease .2s;
+    transform: translate(-50%,-50%);
+    background: var(--bleu);
+    border-radius: 20px;
+    padding: 7px 65px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.theback 
+{
+    overflow: hidden;
+}
+
+.theback .theback_content
+{
+    font-size: 11px;
+    
+}
+
+
+}
+
 

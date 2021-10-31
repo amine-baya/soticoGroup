@@ -42,7 +42,7 @@ if(window.scrollY>= 25 ){
       
   return (
             <> 
-      <nav className={navbarItems ? 'navbarItems sticky' : 'navbarItems' }>
+      <nav className={navbarItems ? 'navbarItems sticky' : 'navbarItems' }> 
         
         <h2 className="navbar_logo"><Link to="/">SoticoGroup </Link> </h2>
         <div className="menu-icon"  onClick={handleClick} >

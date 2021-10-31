@@ -1,15 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios' 
 import GoogleMapReact from 'google-map-react';
-
 import { Link } from 'react-router-dom'
-import Background from '../components/background/Background'
+import Background from '../../components/background/Background'
 import './HomeScreenCss.css'
-
-
-
-
-
 
 
 const HomeScreen = () => {
@@ -108,17 +102,17 @@ const HomeScreen = () => {
 
         <p>
         <strong className="strong">SOTICO Group</strong>  
- est une entreprise familiale, fondée en 1982 par M. Mohamed KHALFALLAH,
-c’est une des premières entreprises Tunisienne spécialisée dans la fabrication
-de vêtements professionnels pour les secteurs de la santé, l’industrie et
-retardateur de flamme, située à BENIRABIAA-M’SAKEN dans la région de
-SOUSSE à 15 min de l’Aéroport de Monastir et 1H30 de l’Aéroport de TUNIS afin
-de faciliter le transport et la logistique et d’être toujours performants.
-Nous avons comme particularité d’être soucieux de la qualité de nos produits et de 
-la satisfaction optimale de nos clients.
-Nous avons le savoir faire avec une expérience de la création à la réalisation fini.
-Nous avons mis en place un système qualité validé par une certification ISO 9001
-version 2008 obtenue en 2010 par un des leaders mondiaux de la certification.
+           est une entreprise familiale, fondée en 1982 par M. Mohamed KHALFALLAH,
+          c’est une des premières entreprises Tunisienne spécialisée dans la fabrication
+          de vêtements professionnels pour les secteurs de la santé, l’industrie et
+          retardateur de flamme, située à BENIRABIAA-M’SAKEN dans la région de
+          SOUSSE à 15 min de l’Aéroport de Monastir et 1H30 de l’Aéroport de TUNIS afin
+          de faciliter le transport et la logistique et d’être toujours performants.
+          Nous avons comme particularité d’être soucieux de la qualité de nos produits et de 
+          la satisfaction optimale de nos clients.
+          Nous avons le savoir faire avec une expérience de la création à la réalisation fini.
+          Nous avons mis en place un système qualité validé par une certification ISO 9001
+          version 2008 obtenue en 2010 par un des leaders mondiaux de la certification.
         </p>
 
        </div>
@@ -156,7 +150,7 @@ version 2008 obtenue en 2010 par un des leaders mondiaux de la certification.
              <div className="singleItem">
               <label htmlFor="name">Nom</label>
               <input type="text" name="name" className="name" placeholder="Nom" value={name} onChange={handleName} ></input>
-          </div>
+            </div>
             <div className="singleItem">
               <label htmlFor="lastname">prénom</label>
               <input type="text" name="lastname" className="lastname" placeholder="Prénom" value={lastname} onChange={handleLastName}></input>

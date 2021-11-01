@@ -137,6 +137,10 @@ background-size: cover;
 
 
 @media (max-width:575px ) {
+.thefront:hover .see_more{
+    font-size: 16px;
+    padding: 5px 30px;
+}
 
     .maincard{ 
     height: 250px; 

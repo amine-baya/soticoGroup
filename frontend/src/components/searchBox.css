@@ -39,3 +39,20 @@
 .searchBox_Button:focus{
     background: transparent;
 }
+
+@media (max-width: 576px)  {
+    .searchForm{
+    width: 40%;
+    margin: 0 0 0 50px;
+    font-size: 14px;
+}
+    .searchInput{
+    box-shadow: none !important;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+.searchBox_Button{
+    top: 5px;
+}
+
+}

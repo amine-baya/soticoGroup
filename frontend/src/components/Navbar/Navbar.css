@@ -72,14 +72,15 @@ nav ul {
 
 /********************MEDIA*********************/
 @media (max-width: 575px) { 
+      .navbar_logo {
+    transform: translateY(25px) !important;
+   
+    } 
 
     .navbar_logo a {
-    color:white;
-    justify-self: start;
-    margin-left: -16px;
-    cursor: pointer;
-    text-decoration: none !important;
-    font-size: 18px;
+    margin-left: 5px;
+    font-size: 19px;
+   
     } 
 
 }

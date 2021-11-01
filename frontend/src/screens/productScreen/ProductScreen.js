@@ -29,8 +29,8 @@ const ProductScreen = ({match}) => {
   return (
     <>
    <section className="product_page"> 
-       <div className="container">
-    <div className="product_description_deatils" ref={container}>
+       <div className="container  ">
+    <div className="product_description_deatils" ref={container}> 
             <div className="image_container_pos"  >
                <ReactImageMagnify {...{
                                                 smallImage: {
